@@ -1,0 +1,32 @@
+<RCC>
+  <qresource prefix="/images">
+    <file>Images/magnifying-glass-4x.png</file>
+    <file>Images/circle-check-4x.png</file>
+    <file>Images/circle-x-4x.png</file>
+    <file>Images/mbri-database.svg</file>
+    <file>Images/arrow-thick-left-4x.png</file>
+    <file>Images/arrow-thick-right-4x.png</file>
+    <file>Images/mbri-left.svg</file>
+    <file>Images/mbri-right.svg</file>
+    <file>Images/Death_Valley_Dunes.jpg</file>
+    <file>Images/grid-three-up-6x.png</file>
+    <file>Images/home-6x.png</file>
+    <file>Images/icons8-0-c-24.png</file>
+    <file>Images/icons8-3-c-24.png</file>
+    <file>Images/icons8-5-c-24.png</file>
+    <file>Images/icons8-7-c-24.png</file>
+    <file>Images/icons8-8-c-24.png</file>
+    <file>Images/icons8-9-c-24.png</file>
+    <file>Images/icons8-capital-50.png</file>
+    <file>Images/icons8-combo-chart-32.png</file>
+    <file>Images/icons8-number-1-24.png</file>
+    <file>Images/icons8-number-2-24.png</file>
+    <file>Images/icons8-number-4-24.png</file>
+    <file>Images/icons8-number-6-24.png</file>
+    <file>Images/icons8-product-32.png</file>
+    <file>Images/layers-6x.png</file>
+    <file>Images/resources.qrc</file>
+    <file>Images/tablet-6x.png</file>
+    <file>Images/x-6x.png</file>
+  </qresource>
+</RCC>

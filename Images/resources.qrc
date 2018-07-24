@@ -1,0 +1,23 @@
+<RCC>
+  <qresource prefix="/image">
+    <file>Death_Valley_Dunes.jpg</file>
+    <file>grid-three-up-6x.png</file>
+    <file>home-6x.png</file>
+    <file>icons8-0-c-24.png</file>
+    <file>icons8-3-c-24.png</file>
+    <file>icons8-5-c-24.png</file>
+    <file>icons8-7-c-24.png</file>
+    <file>icons8-8-c-24.png</file>
+    <file>icons8-9-c-24.png</file>
+    <file>icons8-capital-50.png</file>
+    <file>icons8-combo-chart-32.png</file>
+    <file>icons8-number-1-24.png</file>
+    <file>icons8-number-2-24.png</file>
+    <file>icons8-number-4-24.png</file>
+    <file>icons8-number-6-24.png</file>
+    <file>icons8-product-32.png</file>
+    <file>layers-6x.png</file>
+    <file>tablet-6x.png</file>
+    <file>x-6x.png</file>
+  </qresource>
+</RCC>

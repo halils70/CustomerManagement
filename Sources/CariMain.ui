@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>703</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Müşteri Cari Hesaplar ce Stok İşlemleri</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/images/Images/mbri-database.svg</normalon>
+   </iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="splitter_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3"/>
+   </widget>
+   <widget class="QFrame" name="frame_main">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>991</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QMdiArea" name="mdiArea">
+       <widget class="QWidget" name="subwindow_Cari_Hesap">
+        <property name="minimumSize">
+         <size>
+          <width>910</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="windowTitle">
+         <string>Cari Hesaplar</string>
+        </property>
+        <widget class="QFrame" name="frame_Cari">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>891</width>
+           <height>541</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <widget class="QTabWidget" name="tabWidget_Cari">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>11</y>
+            <width>821</width>
+            <height>511</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_CariKarti">
+           <attribute name="title">
+            <string>Cari Kartı</string>
+           </attribute>
+           <widget class="QSplitter" name="splitter">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>31</y>
+              <width>856</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <widget class="QTableView" name="tableView_Cari_List">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_Cari_Kart">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>97</y>
+              <width>851</width>
+              <height>59</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>Cari</string>
+            </property>
+            <widget class="QWidget" name="">
+             <property name="geometry">
+              <rect>
+               <x>11</x>
+               <y>27</y>
+               <width>831</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Kodu</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_Cari_Kodu">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="inputMask">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="placeholderText">
+                 <string>Kodu</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Ünvanı</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_Cari_Unvan">
+                <property name="maximumSize">
+                 <size>
+                  <width>400</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="placeholderText">
+                 <string>Ünvanı</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>26</height>
+                 </size>
+                </property>
+                <property name="baseSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Ara</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="../resources.qrc">
+                  <normaloff>:/images/Images/magnifying-glass-4x.png</normaloff>:/images/Images/magnifying-glass-4x.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_Cari_Durumu">
+                <property name="text">
+                 <string>&amp;Durumu</string>
+                </property>
+                <property name="buddy">
+                 <cstring>comboBox_Cari_Durum</cstring>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBox_Cari_Durum">
+                <item>
+                 <property name="text">
+                  <string>Akrif</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pasif</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Kara Listede</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="frame">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>290</y>
+              <width>851</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>Vergi Dairesi</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_12">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Vergi No</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLineEdit" name="lineEdit_13">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Bankalar</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="4">
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>475</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="1" rowspan="2" colspan="3">
+              <widget class="QTableView" name="tableView"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QFrame" name="frame_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>170</y>
+              <width>851</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>428</x>
+               <y>11</y>
+               <width>416</width>
+               <height>102</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>internet adresi</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="lineEdit_10"/>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>15</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="3" rowspan="2">
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>Yetkili</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4" rowspan="2">
+               <widget class="QLineEdit" name="lineEdit_5"/>
+              </item>
+              <item row="1" column="1" rowspan="2">
+               <widget class="QLineEdit" name="lineEdit_11">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_11">
+                <property name="text">
+                 <string>e-iş Kodu</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>15</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="3" rowspan="2">
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>Telefon</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="4" rowspan="2">
+               <widget class="QLineEdit" name="lineEdit_7"/>
+              </item>
+              <item row="3" column="1" rowspan="2">
+               <widget class="QLineEdit" name="lineEdit_9"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>Posta Kodu</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>13</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="3">
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>e-mail</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="4">
+               <widget class="QLineEdit" name="lineEdit_6"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>11</x>
+               <y>11</y>
+               <width>413</width>
+               <height>92</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="1" colspan="4">
+               <widget class="QLineEdit" name="lineEdit">
+                <property name="placeholderText">
+                 <string>Adres-1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>Adres</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1" colspan="4">
+               <widget class="QLineEdit" name="lineEdit_2">
+                <property name="placeholderText">
+                 <string>Adres-2</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>Ülke/İl/İlçe</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLineEdit" name="lineEdit_8">
+                <property name="placeholderText">
+                 <string>Ülke</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="QLineEdit" name="lineEdit_3">
+                <property name="placeholderText">
+                 <string>İli</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="4">
+               <widget class="QLineEdit" name="lineEdit_4">
+                <property name="placeholderText">
+                 <string>İlçesi</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QLabel" name="label_6">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>9</y>
+              <width>104</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>130</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Cari Hesap Listesi</string>
+            </property>
+           </widget>
+           <widget class="QWidget" name="">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>420</y>
+              <width>851</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="pushButton_Cari_Kart_Onceki">
+               <property name="text">
+                <string>Önceki Kayıt</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources.qrc">
+                 <normaloff>:/images/Images/arrow-thick-left-4x.png</normaloff>:/images/Images/arrow-thick-left-4x.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_Cari_Kart_Sonraki">
+               <property name="text">
+                <string>Sonraki Kayıt</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources.qrc">
+                 <normaloff>:/images/Images/arrow-thick-right-4x.png</normaloff>:/images/Images/arrow-thick-right-4x.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="text">
+                <string>Kaydet</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources.qrc">
+                 <normaloff>:/images/Images/circle-check-4x.png</normaloff>:/images/Images/circle-check-4x.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_5">
+               <property name="text">
+                <string>Sil</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources.qrc">
+                 <normaloff>:/images/Images/circle-x-4x.png</normaloff>:/images/Images/circle-x-4x.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_Hesap_Hareketleri">
+           <attribute name="title">
+            <string>Hesap Hareketleri</string>
+           </attribute>
+           <widget class="QFrame" name="frame_3">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>160</y>
+              <width>120</width>
+              <height>80</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_Gorusme_Notlari">
+           <attribute name="title">
+            <string>Görüşme Notları</string>
+           </attribute>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>671</width>
+              <height>141</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>Notlar</string>
+            </property>
+            <widget class="QPlainTextEdit" name="plainTextEdit">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>651</width>
+               <height>75</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QWidget" name="">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>100</y>
+               <width>211</width>
+               <height>35</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QPushButton" name="pushButton_Cari_Gorusme_Kaydet">
+                <property name="text">
+                 <string>Kaydet</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="../resources.qrc">
+                  <normaloff>:/images/Images/circle-check-4x.png</normaloff>:/images/Images/circle-check-4x.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_Cari_Gorusme_Sil">
+                <property name="text">
+                 <string>Sil</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="../resources.qrc">
+                  <normaloff>:/images/Images/circle-x-4x.png</normaloff>:/images/Images/circle-x-4x.png</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="subwindow_Stok_islemleri">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="windowTitle">
+         <string>Stok İşlemleri</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QFrame" name="frame_Stok">
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QTabWidget" name="tabWidget_Stok">
+              <property name="minimumSize">
+               <size>
+                <width>910</width>
+                <height>500</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_Stok_Karti">
+               <attribute name="title">
+                <string>Stok Kartı</string>
+               </attribute>
+               <widget class="QGroupBox" name="groupBox_Cari_Kart_2">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>100</y>
+                  <width>851</width>
+                  <height>59</height>
+                 </rect>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>Stok</string>
+                </property>
+                <widget class="QWidget" name="layoutWidget_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>11</x>
+                   <y>27</y>
+                   <width>831</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="label_15">
+                    <property name="text">
+                     <string>Kodu</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_Cari_Kodu_2">
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="inputMask">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Kodu</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_16">
+                    <property name="text">
+                     <string>Adı</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_Cari_Unvan_2">
+                    <property name="maximumSize">
+                     <size>
+                      <width>400</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Ünvanı</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_6">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>26</height>
+                     </size>
+                    </property>
+                    <property name="baseSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Ara</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../resources.qrc">
+                      <normaloff>:/images/Images/magnifying-glass-4x.png</normaloff>:/images/Images/magnifying-glass-4x.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_7">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_Cari_Durumu_2">
+                    <property name="text">
+                     <string>&amp;Durumu</string>
+                    </property>
+                    <property name="buddy">
+                     <cstring>comboBox_Cari_Durum</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox_Cari_Durum_2">
+                    <item>
+                     <property name="text">
+                      <string>Akrif</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Pasif</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+               <widget class="QLabel" name="label_17">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>104</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>130</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Stok Kart Listesi</string>
+                </property>
+               </widget>
+               <widget class="QTableView" name="tableView_Cari_List_2">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>30</y>
+                  <width>856</width>
+                  <height>60</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>150</height>
+                 </size>
+                </property>
+                <property name="baseSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+               </widget>
+               <widget class="QWidget" name="layoutWidget_3">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>450</y>
+                  <width>851</width>
+                  <height>35</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QPushButton" name="pushButton_Cari_Kart_Onceki_2">
+                   <property name="text">
+                    <string>Önceki Kayıt</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../resources.qrc">
+                     <normaloff>:/images/Images/arrow-thick-left-4x.png</normaloff>:/images/Images/arrow-thick-left-4x.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_Cari_Kart_Sonraki_2">
+                   <property name="text">
+                    <string>Sonraki Kayıt</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../resources.qrc">
+                     <normaloff>:/images/Images/arrow-thick-right-4x.png</normaloff>:/images/Images/arrow-thick-right-4x.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_7">
+                   <property name="text">
+                    <string>Kaydet</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../resources.qrc">
+                     <normaloff>:/images/Images/circle-check-4x.png</normaloff>:/images/Images/circle-check-4x.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_8">
+                   <property name="text">
+                    <string>Sil</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../resources.qrc">
+                     <normaloff>:/images/Images/circle-x-4x.png</normaloff>:/images/Images/circle-x-4x.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_8">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="tab_Stok_Ilave">
+               <attribute name="title">
+                <string>İlave Bilgiler</string>
+               </attribute>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFirma">
+    <property name="title">
+     <string>Fir&amp;ma</string>
+    </property>
+    <addaction name="actionFirma_Sec"/>
+    <addaction name="actionFirma_Kapat"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action_Cik"/>
+   </widget>
+   <widget class="QMenu" name="menuUygulama_Yonetimi">
+    <property name="title">
+     <string>&amp;Uygulama Yönetimi</string>
+    </property>
+    <addaction name="actionKullanici_islemleri"/>
+    <addaction name="actionFirma_islemleri"/>
+    <addaction name="actionGenel_Tanimlamalar"/>
+   </widget>
+   <widget class="QMenu" name="menuYardim">
+    <property name="title">
+     <string>&amp;Yardım</string>
+    </property>
+    <addaction name="actionGenel_Yardim"/>
+    <addaction name="actionUygulama_Guncelleme"/>
+    <addaction name="actionLisanslama"/>
+    <addaction name="actionYazilim_Firmasi_Hakkinda"/>
+   </widget>
+   <addaction name="menuFirma"/>
+   <addaction name="menuUygulama_Yonetimi"/>
+   <addaction name="menuYardim"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCari_Hesaplar"/>
+   <addaction name="actionStok_islemleri"/>
+   <addaction name="actionRaporlar"/>
+   <addaction name="separator"/>
+   <addaction name="action_Onceki_Pencere"/>
+   <addaction name="actionSonraki_Pencere"/>
+   <addaction name="actionPencerleri_Yanyana_Sirala"/>
+   <addaction name="actionPencereleri_Ard_Arda_Sirala"/>
+  </widget>
+  <action name="actionFirma_Sec">
+   <property name="text">
+    <string>&amp;Firma Seç</string>
+   </property>
+  </action>
+  <action name="actionFirma_Kapat">
+   <property name="text">
+    <string>Firma &amp;Kapat</string>
+   </property>
+  </action>
+  <action name="action_Cik">
+   <property name="text">
+    <string>&amp;Çık</string>
+   </property>
+  </action>
+  <action name="actionKullanici_islemleri">
+   <property name="text">
+    <string>&amp;Kullanıcı İşlemleri</string>
+   </property>
+  </action>
+  <action name="actionFirma_islemleri">
+   <property name="text">
+    <string>&amp;Firma İşlemleri</string>
+   </property>
+  </action>
+  <action name="actionGenel_Tanimlamalar">
+   <property name="text">
+    <string>&amp;Genel Tanımlamalar</string>
+   </property>
+  </action>
+  <action name="actionGenel_Yardim">
+   <property name="text">
+    <string>&amp;Genel Yardım</string>
+   </property>
+  </action>
+  <action name="actionUygulama_Guncelleme">
+   <property name="text">
+    <string>&amp;Uygulama Güncelleme</string>
+   </property>
+  </action>
+  <action name="actionLisanslama">
+   <property name="text">
+    <string>&amp;Lisanslama</string>
+   </property>
+  </action>
+  <action name="actionYazilim_Firmasi_Hakkinda">
+   <property name="text">
+    <string>&amp;Yazılım Firması Hakkında</string>
+   </property>
+  </action>
+  <action name="actionCari_Hesaplar">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/images/Images/icons8-capital-50.png</normaloff>:/images/Images/icons8-capital-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cari Hesaplar</string>
+   </property>
+  </action>
+  <action name="actionStok_islemleri">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/images/Images/icons8-product-32.png</normaloff>:/images/Images/icons8-product-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stok İşlemleri</string>
+   </property>
+  </action>
+  <action name="actionRaporlar">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/images/Images/icons8-combo-chart-32.png</normaloff>:/images/Images/icons8-combo-chart-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>Raporlar</string>
+   </property>
+  </action>
+  <action name="actionPencerleri_Yanyana_Sirala">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/images/Images/grid-three-up-6x.png</normaloff>:/images/Images/grid-three-up-6x.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pencerleri Yanyana Sırala</string>
+   </property>
+  </action>
+  <action name="actionPencereleri_Ard_Arda_Sirala">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/images/Images/layers-6x.png</normaloff>:/images/Images/layers-6x.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pencereleri Ard Arda Sırala</string>
+   </property>
+  </action>
+  <action name="actionSonraki_Pencere">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/images/Images/arrow-thick-right-4x.png</normaloff>:/images/Images/arrow-thick-right-4x.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sonraki Pencere</string>
+   </property>
+  </action>
+  <action name="action_Onceki_Pencere">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/images/Images/arrow-thick-left-4x.png</normaloff>:/images/Images/arrow-thick-left-4x.png</iconset>
+   </property>
+   <property name="text">
+    <string>Önceki Pencere</string>
+   </property>
+  </action>
+  <action name="action_Cari_Gorusme_Kaydet">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/images/Images/circle-check-4x.png</normaloff>:/images/Images/circle-check-4x.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kaydet</string>
+   </property>
+  </action>
+  <action name="action_Cari_Gorusme_Sil">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/images/Images/circle-x-4x.png</normaloff>:/images/Images/circle-x-4x.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sil</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionPencerleri_Yanyana_Sirala</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>tileSubWindows()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPencereleri_Ard_Arda_Sirala</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>cascadeSubWindows()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSonraki_Pencere</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>activateNextSubWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Onceki_Pencere</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>activatePreviousSubWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
